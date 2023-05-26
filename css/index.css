@@ -1,55 +1,353 @@
-.encabezado{
-    font-size: 15px;
-    border: 1px solid black;
-    margin: 2px;
-
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-}
-.buscador{
-    width: 30%;
-    height: 10%;
-    border: 1px solid black;
-
-}
-.icono{
-    font-size: 2rem;
-}
-.seccion1{
-    
-    border: 1px solid black;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #headerRight {
     display: flex;
-    justify-content: center;
-}
-.img{
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  
+  section {
+    display: flex;
+    padding: 20px;
+  }
+  
+  aside {
+    width: 200px;
+    padding-right: 20px;
+  }
+  
+  main {
     width: 100%;
-    height: 15rem;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+ /* Estilos para dropdown */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .dropdownBtn {
+    background-color: #333;
+    color: #fffbfb;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #030303;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdownContent.show {
+    display: block;
+  }
+  
+  .dropdownContent li {
+    padding: 10px;
+  }
+  
+  /* Estilos responsivos */
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #headerRight {
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+  
+    .dropdownBtn {
+      margin-top: 10px;
+    }
+  
+    section {
+      flex-direction: column;
+    }
+  
+    aside {
+      margin-right: 20px;
+    }
+  
+    main {
+      width: 100%;
+    }
+  }
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footerContainer {
     display: flex;
-    align-content: center;
-    opacity: .6;
-}
-.filtro{
-    border: 1px solid black;
-    margin: 3px;
-    width: 150px;
-    height: 100px;
-    
-}
-.seccion3{
-    margin: 3px;
-    width: 180px;
-    height: 160px;
-    
-}
-.caja1{
-    font-size: 10rem;
-    margin: 3px;
-    display: flex;
-    justify-content: space-around;
-    
-}
-.nombre{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .info,
+  .contacto,
+  .redes-sociales {
+    width: 30%;
+  }
+  
+  .info h4,
+  .contacto h4,
+  .redes-sociales h4 {
+    margin-top: 0;
+  }
+  
+  .info p,
+  .contacto p {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-}
+    margin-top: 10px;
+  }
+  
+  .social-icons li {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .footerContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info,
+    .contacto,
+    .redes-sociales {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .info,
+  .contacto,
+  .redes-sociales {
+    width: 30%;
+  }
+  
+  .info h4,
+  .contacto h4,
+  .redes-sociales h4 {
+    margin-top: 0;
+  }
+  
+  .info p,
+  .contacto p {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icons li {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .footerContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info,
+    .contacto,
+    .redes-sociales {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .info,
+  .contacto,
+  .redes-sociales {
+    width: 30%;
+  }
+  
+  .info h4,
+  .contacto h4,
+  .redes-sociales h4 {
+    margin-top: 0;
+  }
+  
+  .info p,
+  .contacto p {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icons li {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .footerContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info,
+    .contacto,
+    .redes-sociales {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+/* Estilos generales del carrusel */
+#carrusel {
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos para portátil */
+  @media (max-width: 1024px) {
+    .carousel-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    .carousel-container img {
+      width: 80%;
+      margin-right: 10px;
+    }
+    
+    .carousel-container img:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  /* Estilos para tablet y móvil */
+  @media (max-width: 768px) {
+    .carousel-container img {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  
+  
+  
+  
+  

@@ -1,37 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Tienda de Ropa para Hombres</title>
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<link rel="stylesheet" href="./css/index.css">
-<link rel="stylesheet" href="./css/config.css">
 <body>
-    
-
-    <header class="header"></header>
-
-
-     <div class="seccion1">
-       <img class="img" src="https://img.freepik.com/foto-gratis/fila-ropa-moda-perchas_1232-3003.jpg" alt="">
-     </div>    
-
-
-    <div class="seccion2"></div> 
-
-    <div class="seccion3">
-        <div class="caja1">🆎</div>
-        <h2 class="nombre">Nombre del producto</h2>
-
-        <div class="caja1">🆎</div>
-        <h2 class="nombre">Nombre del producto</h2>
-        
+  <header>
+    <h1 id="tituloTienda"></h1>
+    <div id="headerRight">
+      <input type="text" id="buscador" placeholder="Buscar por nombre">
+      <div class="dropdown">
+        <button id="categoriasBtn" class="dropdownBtn">Categorías</button>
+        <ul id="categoriasList" class="dropdownContent"></ul>
+      </div>
+      <button id="rebajasBtn" class="dropdownBtn">Rebajas</button>
+      <ul id="productosList" class="dropdownContent"></ul>
     </div>
-    
+  </header>
+  <section>
+    <aside id="filtroInfo">
+      <h3>Información del Filtro:</h3>
+      <p id="filtroTexto"></p>
+    </aside>
+    <main>
+      <h2>Rebajas</h2>
 
-     <script src="./js/header.js"></script>
-     <script src="./js/filtro.js"></script>
+      <label for="talla">Talla:</label>
+      <select id="talla">
+        <option value="">Todos</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+      </select>
+      <label for="color">Color:</label>
+      <select id="color">
+        <option value="">Todos</option>
+        <option value="rojo">Rojo</option>
+        <option value="azul">Azul</option>
+        <option value="verde">Verde</option>
+        <option value="amarillo">Amarillo</option>
+      </select>
+      <ul id="productos"></ul>
+    </main>
+  </section>
+
+  <div id="carrusel">
+    <div class="carousel-container">
+      <img src="" alt="Imagen 1">
+      <img src="" alt="Imagen 2">
+      <img src="" alt="Imagen 3">
+      <img src="" alt="Imagen 4">
+      <img src="" alt="Imagen 5">
+    </div>
+  </div>
+
+  <footer>
+    <div id="footerContainer">
+      <div id="info">
+        <h4>Información de la Tienda</h4>
+        <p>Tienda de Ropa para Hombres</p>
+        <p>Dirección: Calle Principal, Ciudad</p>
+        <p>Teléfono: 123-456-789</p>
+      </div>
+      <div id="contacto">
+        <h4>Contacto</h4>
+        <p>Email: info@tiendaropa.com</p>
+        <p>Teléfono: 123-456-789</p>
+      </div>
+      <div id="redes-sociales">
+        <h4>Síguenos en redes sociales</h4>
+        <ul id="social-icons">
+          <li><a href="#"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook"></a></li>
+          <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/769px-Instagram-Icon.png" alt="Instagram"></a></li>
+          <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png" alt="Twitter"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./js/header.js"></script>
+  <script src="./js/filtro.js"></script>
+  <script src="./js/carrusel.js"></script>
+  <script src="./js/footer.js"></script>
 </body>
+
 </html>

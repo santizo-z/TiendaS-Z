@@ -1,19 +1,39 @@
-function filtro (){
-    let main1 = document.querySelector(".seccion2");
-    for (let i=0; i <= 0; i++ ){
-    let div = document.createElement("div")
-    div.innerHTML = `
-    <div class="seccion2">
-    <div class="filtro">
-        <h2>Informacion sobre el filtro</h2>
-        <p>Este filtro te ayudara a uscar de
-           una manera mas facil y sencilla la 
-           prenda de ropa que buscas, seleccionando
-           el color y la talla</p>
+document.addEventListener('DOMContentLoaded', function() {
+    const tallaSelect = document.getElementById('talla');
+    const colorSelect = document.getElementById('color');
+    const buscadorInput = document.getElementById('buscador');
+    const productosList = document.getElementById('productos');
+    const categoriasList = document.getElementById('categorias');
+    
+    tallaSelect.addEventListener('change', filtrarProductos);
+    colorSelect.addEventListener('change', filtrarProductos);
+    buscadorInput.addEventListener('input', filtrarProductos);
+    
+    function filtrarProductos() {
+      const talla = tallaSelect.value;
+      const color = colorSelect.value;
+      const buscador = buscadorInput.value.toLowerCase();
+      
+      const productos = Array.from(productosList.children);
+      
+      productos.forEach(producto => {
+        const mostrar = (
+          (talla === '' || producto.textContent.toLowerCase().includes(talla)) &&
+          (color === '' || producto.textContent.toLowerCase().includes(color)) &&
+          (buscador === '' || producto.textContent.toLowerCase().includes(buscador))
+        );
         
-    </div>
- </div>`;
- main1.appendChild(div);
+        producto.style.display = mostrar ? 'block' : 'none';
+      });
     }
-}
-filtro();
+    
+    // Generar categorías
+    const categorias = ['Camisetas', 'Pantalones', 'Chaquetas', 'Accesorios'];
+    
+    categorias.forEach(categoria => {
+      const li = document.createElement('li');
+      li.textContent = categoria;
+      categoriasList.appendChild(li);
+    });
+  });
+  
