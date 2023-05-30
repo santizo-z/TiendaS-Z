@@ -4,7 +4,7 @@ const carouselImages = carouselContainer.querySelectorAll('img');
 let currentIndex = 0;
 
 function showImage(index) {
-  carouselContainer.style.transform = `translateX(-${index * 100}%)`;
+  carouselContainer.style.transform = `translateX(-${index * 50}%)`;
 }
 
 function nextImage() {

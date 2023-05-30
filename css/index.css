@@ -118,130 +118,8 @@ body {
       width: 100%;
     }
   }
-/* Estilos para el footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  .footerContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .info,
-  .contacto,
-  .redes-sociales {
-    width: 30%;
-  }
-  
-  .info h4,
-  .contacto h4,
-  .redes-sociales h4 {
-    margin-top: 0;
-  }
-  
-  .info p,
-  .contacto p {
-    margin-bottom: 10px;
-  }
-  
-  .social-icons {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .social-icons li {
-    margin-right: 10px;
-  }
-  
-  .social-icons img {
-    width: 30px;
-    height: 30px;
-  }
-  
-  /* Estilos responsivos */
-  @media (max-width: 768px) {
-    .footerContainer {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .info,
-    .contacto,
-    .redes-sociales {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  }
-/* Estilos para el footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  .footerContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .info,
-  .contacto,
-  .redes-sociales {
-    width: 30%;
-  }
-  
-  .info h4,
-  .contacto h4,
-  .redes-sociales h4 {
-    margin-top: 0;
-  }
-  
-  .info p,
-  .contacto p {
-    margin-bottom: 10px;
-  }
-  
-  .social-icons {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .social-icons li {
-    margin-right: 10px;
-  }
-  
-  .social-icons img {
-    width: 30px;
-    height: 30px;
-  }
-  
-  /* Estilos responsivos */
-  @media (max-width: 768px) {
-    .footerContainer {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .info,
-    .contacto,
-    .redes-sociales {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  }
+
+
 /* Estilos para el footer */
 footer {
     background-color: #333;
@@ -307,7 +185,7 @@ footer {
 /* Estilos generales del carrusel */
 #carrusel {
     margin-top: 20px;
-    width: 100%;
+    width: 60%;
     overflow: hidden;
   }
   
@@ -318,9 +196,10 @@ footer {
   }
   
   .carousel-container img {
-    width: 100%;
+    width: 50%;
     height: auto;
   }
+  
   
   /* Estilos para portátil */
   @media (max-width: 1024px) {
@@ -346,6 +225,26 @@ footer {
       margin-right: 0;
     }
   }
+  
+  #btn-buscar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  #btn-buscar:hover {
+    background-color: #45a049;
+  }
+.texto_filtro{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
   
   
   

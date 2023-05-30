@@ -36,4 +36,23 @@ document.addEventListener('DOMContentLoaded', function() {
       categoriasList.appendChild(li);
     });
   });
+  // Obtener referencia al botón de buscar
+const btnBuscar = document.getElementById('btn-buscar');
+
+// Agregar evento de clic al botón de buscar
+btnBuscar.addEventListener('click', buscarElementos);
+
+// Función para buscar elementos
+function buscarElementos() {
+  const tallaSeleccionada = document.getElementById('input-talla').value;
+  const colorSeleccionado = document.getElementById('input-color').value;
+
+  // Realizar la lógica de búsqueda aquí
+  // ...
+
+  // Ejemplo de salida en la consola
+  console.log('Talla seleccionada:', tallaSeleccionada);
+  console.log('Color seleccionado:', colorSeleccionado);
+}
+
   
