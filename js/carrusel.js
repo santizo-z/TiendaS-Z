@@ -1,23 +1,23 @@
-const carouselContainer = document.querySelector('.carousel-container');
-const carouselImages = carouselContainer.querySelectorAll('img');
+const carouselContainer = document.getElementById('carousel-container');
+const carousel = document.getElementById('carousel');
+const images = carousel.getElementsByTagName('img');
+const imageWidth = images[0].offsetWidth;
 
-let currentIndex = 0;
+let currentPosition = 0;
+let totalImages = images.length;
 
-function showImage(index) {
-  carouselContainer.style.transform = `translateX(-${index * 50}%)`;
+function moveCarousel() {
+  currentPosition -= imageWidth;
+
+  if (currentPosition <= -imageWidth * (totalImages - 1)) {
+    currentPosition = 0;
+  }
+
+  carousel.style.transform = `translateX(${currentPosition}px)`;
 }
 
-function nextImage() {
-  currentIndex = (currentIndex + 1) % carouselImages.length;
-  showImage(currentIndex);
-}
+setInterval(moveCarousel, 3000); // Cambia la imagen cada 3 segundos (ajusta el tiempo según sea necesario)
 
-function previousImage() {
-  currentIndex = (currentIndex - 1 + carouselImages.length) % carouselImages.length;
-  showImage(currentIndex);
-}
-
-setInterval(nextImage, 3000); // Cambiar imagen cada 3 segundos
 
 // Event listeners para botones de siguiente y anterior
 document.getElementById('btnNext').addEventListener('click', nextImage);

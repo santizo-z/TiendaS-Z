@@ -75,7 +75,7 @@ body {
   .dropdownContent {
     display: none;
     position: absolute;
-    background-color: #030303;
+    background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -185,8 +185,9 @@ footer {
 /* Estilos generales del carrusel */
 #carrusel {
     margin-top: 20px;
-    width: 60%;
+    width: 100%;
     overflow: hidden;
+    height: 30rem;
   }
   
   .carousel-container {
@@ -197,7 +198,7 @@ footer {
   
   .carousel-container img {
     width: 50%;
-    height: auto;
+    height: 30rem;
   }
   
   
@@ -245,6 +246,29 @@ footer {
 .texto_filtro{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+/* Estilos de los recuadros de ropa */
+#recuadros-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recuadro {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.recuadro img {
+  max-width: 100%;
+  height: auto;
+}
+
+.recuadro p {
+  margin-top: 10px;
+}
+
   
   
   
