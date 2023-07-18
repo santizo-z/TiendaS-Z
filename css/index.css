@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+  /* Estilos del header */
   header {
     background-color: #333;
     color: #fff;
@@ -11,6 +11,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .logo img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
   }
   
   h1 {
@@ -246,14 +251,14 @@ footer {
 .texto_filtro{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-/* Estilos de los recuadros de ropa */
+/* Estilos de los recuadros de ropa*/
 #recuadros-container {
   display: flex;
   flex-wrap: wrap;
 }
 
 .recuadro {
-  width: calc(33.33% - 20px);
+  flex: 0 0 calc(33.33% - 40px); /* Ajustamos el ancho de los recuadros para que haya 3 por fila */
   margin: 10px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -261,13 +266,28 @@ footer {
 }
 
 .recuadro img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 400px; /* Ajustamos la altura deseada de las imágenes */
+  object-fit: cover; /* Ajustamos cómo se muestra la imagen para mantener el tamaño y recortar si es necesario */
 }
 
-.recuadro p {
+.recuadro h3 {
   margin-top: 10px;
 }
+
+/* Estilos para alinear los recuadros en filas de 3 elementos */
+.recuadro-row-end {
+  margin-right: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .recuadro {
+    flex: 0 0 100%; /* Ajustamos el ancho para que solo quepa un recuadro por fila */
+  }
+}
+
+
 
   
   

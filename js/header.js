@@ -36,5 +36,13 @@ const categorias = [
  
  // Mostrar las categorías inicialmente
  mostrarCategorias();
+
+ // boton de regreso al inicio 
+ const btnInicio = document.getElementById('btn-inicio');
+
+ btnInicio.addEventListener('click', () => {
+   window.location.href = 'index.html';
+ });
+ 
  
  
