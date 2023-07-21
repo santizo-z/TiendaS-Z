@@ -1,4 +1,4 @@
-import { ropa } from "./database.js";
+import { principal } from "./database.js";
 
 const recuadrosContainer = document.getElementById('recuadros-container');
 
@@ -31,4 +31,5 @@ function crearRecuadros(data) {
 }
 
 // Crear los recuadros con los datos proporcionados
-crearRecuadros(ropa);
+crearRecuadros(principal);
+

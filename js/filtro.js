@@ -1,3 +1,39 @@
+function filtros() {
+  let filtro_al_dom = document.querySelector("#filtro1");
+  let variable = document.createElement("div");
+  variable.innerHTML = `
+  <aside id="filtroInfo">
+      <h3>Información del Filtro:</h3>
+      <p class="texto_filtro" id="filtroTexto"> Este filtro de te ayudara a encontrar de una manera mas rapida
+       y sencilla la prenda que buscas, solo necesitas saber tu talla
+       y escoger el color que te gusta y ¡Listo!</p>
+    </aside>
+
+    <div id="filtro">
+      <label for="input-talla">Talla:</label>
+      <select id="input-talla">
+        <option value="">Seleccione</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+      </select>
+    
+      <label for="input-color">Color:</label>
+      <select id="input-color">
+        <option value="">Seleccione</option>
+        <option value="Azul">Azul</option>
+        <option value="Negro">Negro</option>
+        <option value="Marrón">Marrón</option>
+        <option value="Rojo">Rojo</option>
+      </select>
+    
+      <button id="btn-buscar">Buscar</button>
+    </div>`
+  ;
+  filtro_al_dom.appendChild(variable);
+}
+filtros();
 document.addEventListener('DOMContentLoaded', function() {
     const tallaSelect = document.getElementById('talla');
     const colorSelect = document.getElementById('color');

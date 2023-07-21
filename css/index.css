@@ -22,6 +22,7 @@ body {
     margin: 0;
   }
   
+  
   #headerRight {
     display: flex;
     align-items: center;
@@ -283,9 +284,213 @@ footer {
 /* Estilos para dispositivos móviles */
 @media (max-width: 767px) {
   .recuadro {
-    flex: 0 0 100%; /* Ajustamos el ancho para que solo quepa un recuadro por fila */
+    flex: 0 0 90%; /* Ajustamos el ancho para que solo quepa un recuadro por fila */
   }
 }
+
+/* estilos de recuadros de accesorios */
+
+#accesorios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.accesorio {
+  flex: 0 0 calc(31.33% - 20px);
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.accesorio img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.accesorio h3 {
+  margin-top: 10px;
+}
+
+/* Estilos para alinear los accesorios en filas de 3 elementos */
+.accesorio-row-end {
+  margin-right: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .accesorio {
+    flex: 0 0 88%;
+  }
+}
+
+
+/* Estilos para los recuadros de camisas */
+
+#camisas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.camisa {
+  flex: 0 0 calc(31.33% - 20px);
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.camisa img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.camisa h3 {
+  margin-top: 10px;
+}
+
+/* Estilos para alinear las camisas en filas de 3 elementos */
+.camisa-row-end {
+  margin-right: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .camisa {
+    flex: 0 0 88%;
+  }
+}
+
+/* Estilos para pantalones */
+#pantalones-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pantalon {
+  flex: 0 0 calc(31.33% - 20px);
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.pantalon img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.pantalon h3 {
+  margin-top: 10px;
+}
+
+/* Estilos para alinear los pantalones en filas de 3 elementos */
+.pantalon-row-end {
+  margin-right: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .pantalon {
+    flex: 0 0 87%;
+  }
+}
+
+/* Estilos para las chaquetas */
+
+#chaquetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.chaqueta {
+  flex: 0 0 calc(31.33% - 20px);
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.chaqueta img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.chaqueta h3 {
+  margin-top: 10px;
+}
+
+/* Estilos para alinear las chaquetas en filas de 3 elementos */
+.chaqueta-row-end {
+  margin-right: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .chaqueta {
+    flex: 0 0 88%;
+  }
+}
+
+/* Estilos para las rebajas */
+
+#rebajas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rebaja {
+  flex: 0 0 calc(31.33% - 20px);
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.rebaja img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.rebaja h3 {
+  margin-top: 10px;
+}
+
+/* Estilos para el precio antes */
+.precio-antes {
+  color: red;
+  text-decoration: line-through;
+}
+
+/* Estilos para el precio ahora */
+.precio-ahora {
+  font-size: 1.2em;
+}
+
+/* Estilos para alinear las rebajas en filas de 3 elementos */
+.rebaja-row-end {
+  margin-right: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .rebaja {
+    flex: 0 0 88%;
+  }
+}
+
+
+
 
 
 

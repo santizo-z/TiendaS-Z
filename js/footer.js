@@ -1,3 +1,32 @@
+function footer() {
+  let footer_al_dom = document.querySelector("#footer1");
+  let variable = document.createElement("div");
+  variable.innerHTML = `
+  <div id="footerContainer">
+      <div id="info">
+        <h4>Información de la Tienda</h4>
+        <p>Tienda de Ropa para Hombres</p>
+        <p>Dirección: Calle Principal, Ciudad</p>
+        <p>Teléfono: 123-456-789</p>
+      </div>
+      <div id="contacto">
+        <h4>Contacto</h4>
+        <p>Email: info@tiendaropa.com</p>
+        <p>Teléfono: 123-456-789</p>
+      </div>
+      <div id="redes-sociales">
+        <h4>Síguenos en redes sociales</h4>
+        <ul id="social-icons">
+          <li><a href="#"><img src="https://i.pinimg.com/736x/a3/02/8d/a3028d99d7ffd29636116de43c9f00db.jpg" alt=></a></li>
+          <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/769px-Instagram-Icon.png" alt=></a></li>
+          <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png" alt=></a></li>
+        </ul>
+      </div>
+    </div>`
+  ;
+  footer_al_dom.appendChild(variable);
+}
+footer();
 // Elementos del DOM
 const infoContainer = document.getElementById("info");
 const contactoContainer = document.getElementById("contacto");
