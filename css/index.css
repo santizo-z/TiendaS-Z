@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: auto;
   }
   .logo img {
     width: 30px;
@@ -65,8 +66,8 @@ body {
  /* Estilos para dropdown */
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: right;
     margin-left: 10px;
   }
   
@@ -101,6 +102,7 @@ body {
     header {
       flex-direction: column;
       align-items: flex-start;
+      width: auto;
     }
   
     #headerRight {
@@ -252,10 +254,11 @@ footer {
 .texto_filtro{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-/* Estilos de los recuadros de ropa*/
+/* Estilos de los recuadros del principal*/
 #recuadros-container {
   display: flex;
   flex-wrap: wrap;
+  width: auto;
 }
 
 .recuadro {
@@ -264,6 +267,7 @@ footer {
   padding: 10px;
   border: 1px solid #ccc;
   text-align: center;
+  width: auto;
 }
 
 .recuadro img {
@@ -284,8 +288,10 @@ footer {
 /* Estilos para dispositivos móviles */
 @media (max-width: 767px) {
   .recuadro {
-    flex: 0 0 90%; /* Ajustamos el ancho para que solo quepa un recuadro por fila */
+    flex: 0 0 88%; /* Ajustamos el ancho para que solo quepa un recuadro por fila */
+    width: auto;
   }
+
 }
 
 /* estilos de recuadros de accesorios */
@@ -488,6 +494,36 @@ footer {
     flex: 0 0 88%;
   }
 }
+
+/* Anuncio de rebajas*/
+.anuncio {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: auto;
+}
+
+.anuncio p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .anuncio {
+    padding: 8px 10px;
+    width: 94.6%;
+  }
+
+  .anuncio p {
+    font-size: 16px;
+  }
+}
+
+
+
+
 
 
 

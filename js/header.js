@@ -8,7 +8,7 @@ function header() {
   <h1 id="tituloTienda"></h1>
   <div id="headerRight">
 
-  <input class="buscar" type="text" id="buscador" name="busca" placeholder="Buscar por nombre">
+  <input class="buscador" type="text" id="buscador" name="buscador" placeholder="Buscar por nombre">
 
   <div class="dropdown">
     <button id="categoriasBtn" class="dropdownBtn">Categorías</button>
@@ -72,13 +72,15 @@ const categorias = [
    window.location.href = 'index.html';
  });
 
+ //buscador
+
  document.addEventListener("keyup", e=>{
 
   if (e.target.matches("#buscador")){
 
       if (e.key ==="Escape")e.target.value = ""
 
-      document.querySelectorAll(".recuadro").forEach(fruta =>{
+      document.querySelectorAll(".div").forEach(fruta =>{
 
           fruta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
             ?fruta.classList.remove("filtro")

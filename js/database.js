@@ -64,7 +64,7 @@ export const accesorios2 = [
     },
     {
         img : "https://i.pinimg.com/564x/ca/ef/f4/caeff4b05dff20f147ddb754ae595916.jpg",
-        titulo : "Pulsera de banada en plata",
+        titulo : "Pulsera de bañada en plata",
         precio : "Q100.00"
     },
     {
@@ -104,7 +104,7 @@ export const accesorios2 = [
     },
     {
         img : "https://i.pinimg.com/564x/b9/f4/2a/b9f42a28438bc55523f45f89c5db8075.jpg",
-        titulo : "Reloj de cuerdad de metal",
+        titulo : "Reloj de cuerdas de metal",
         precio : "Q300.00"
     },
 ]
@@ -178,7 +178,7 @@ export const pantalones = [
     },
     {
         img : "https://i.pinimg.com/564x/20/6f/35/206f35a1d54cc3a28b2ba8306da074af.jpg",
-        titulo : "Pantalon de casual",
+        titulo : "Pantalon casual",
         precio : "Q210.00"
     },
     {
